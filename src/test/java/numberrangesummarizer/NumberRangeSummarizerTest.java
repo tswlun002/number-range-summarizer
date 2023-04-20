@@ -84,8 +84,8 @@ class NumberRangeSummarizerTest {
     public Stream<Arguments> getInValidTestCasesRangeAndSummarize(){
 
         return  Stream.of(
-                Arguments.of(null,"Null or empty collection summarized"),
-                Arguments.of(Collections.EMPTY_LIST, "Null or empty collection summarized")
+                Arguments.of(null,"Null or empty collection can not be summarized"),
+                Arguments.of(Collections.EMPTY_LIST, "Null or empty collection can not be summarized")
         );
     }
 

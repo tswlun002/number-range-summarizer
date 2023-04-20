@@ -69,7 +69,7 @@ public class NumberRangeSummarizerImpl implements  NumberRangeSummarizer {
      */
     @Override
     public String summarizeCollection(Collection<Integer> input) {
-        if(input == null || input.size()==0) throw new NullPointerException("Null or empty collection summarized") ;
+        if(input == null || input.size()==0) throw new NullPointerException("Null or empty collection can not be summarized") ;
 
         if (input.size()==1){
             return Integer.toString((Integer)input.toArray()[0]);
